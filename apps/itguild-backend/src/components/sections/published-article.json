@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_published_articles",
+  "info": {
+    "displayName": "Published Article",
+    "icon": "bolt",
+    "description": "Published Blog Article"
+  },
+  "options": {},
+  "attributes": {
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "likes": {
+      "type": "integer"
+    }
+  }
+}

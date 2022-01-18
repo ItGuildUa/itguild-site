@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_twitter_cards",
+  "info": {
+    "displayName": "TwitterCard",
+    "icon": "marker",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "card": {
+      "type": "enumeration",
+      "enum": [
+        "summary",
+        "summary_large_image"
+      ]
+    }
+  }
+}

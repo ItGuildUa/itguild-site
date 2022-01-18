@@ -1,25 +1,30 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "histories",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "Home",
-    "name": "homepage",
+    "singularName": "history",
+    "pluralName": "histories",
+    "displayName": "History",
     "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "sections.hero",
-      "required": true
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.hero"
     },
     "articles": {
       "type": "component",

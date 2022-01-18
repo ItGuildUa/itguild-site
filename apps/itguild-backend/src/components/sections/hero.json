@@ -2,13 +2,25 @@
   "collectionName": "components_decoration_heroes",
   "info": {
     "name": "Hero",
-    "icon": "address-card"
+    "icon": "address-card",
+    "displayName": "Hero",
+    "description": "Hero Section Title"
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
       "required": true
+    },
+    "opengraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.opengraph"
+    },
+    "twittercard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.twitter-card"
     }
   }
 }
