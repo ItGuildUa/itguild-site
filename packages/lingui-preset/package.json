@@ -1,0 +1,19 @@
+{
+  "name": "lingui-preset",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "files": [
+    "config.js"
+  ],
+  "dependencies": {
+    "@lingui/cli": "^3.12.1",
+    "@lingui/core": "^3.12.1",
+    "@lingui/macro": "^3.12.1",
+    "@lingui/react": "^3.12.1",
+    "make-plural": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint-preset": "*"
+  }
+}

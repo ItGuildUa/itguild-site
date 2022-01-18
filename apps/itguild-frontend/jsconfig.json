@@ -1,0 +1,13 @@
+{
+  "include": ["src/**/*.js", "test/**/*.js"],
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "*": ["./src/*"],
+      "test/*": ["./test/*"]
+    }
+  },
+}

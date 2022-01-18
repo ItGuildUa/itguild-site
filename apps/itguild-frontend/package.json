@@ -1,0 +1,43 @@
+{
+  "name": "itguild-frontend",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wait-on http://localhost:1337/admin && next dev",
+    "build": "wait-on http://localhost:1337/admin && next build",
+    "start": "wait-on http://localhost:1337/admin && next start",
+    "export": "NODE_ENV=production wait-on http://localhost:1337/admin && next export",
+    "test": "wait-on http://localhost:1337/admin && ava",
+    "test-watch": "wait-on http://localhost:1337/admin && ava --watch",
+    "test-coverage": "BABEL_ENV=coverage wait-on http://localhost:1337/admin && nyc ava",
+    "telemetry-disable": "next telemetry disable"
+  },
+  "dependencies": {
+    "next-preset": "*",
+    "uikit": "*"
+  },
+  "devDependencies": {
+    "eslint-preset": "*",
+    "test-preset": "*",
+    "wait-on": "6.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie >= 0",
+      "not ie_mob >= 0",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "uikit",
+  "version": "1.0.0",
+  "private": true,
+  "main": "components.js",
+  "scripts": {
+    "test": "ava",
+    "test-coverage": "BABEL_ENV=coverage nyc ava",
+    "i18n-extract": "NODE_ENV=development lingui extract",
+    "i18n-compile": "NODE_ENV=development lingui compile"
+  },
+  "dependencies": {
+    "next-preset": "*",
+    "lingui-preset": "*"
+  },
+  "devDependencies": {
+    "eslint-preset": "*"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  }
+}
